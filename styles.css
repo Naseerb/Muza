@@ -138,18 +138,27 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     margin-top: auto;
 }
+/* Media Query for devices with less than 7 inch diagonal display size */
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem 0; /* Reduce padding for smaller screens */
+    }
 
-@media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Ensure horizontal layout */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
     }
-    
+
     nav ul li {
-        margin: 10px 0;
+        margin: 0 5px; /* Reduce margin for smaller screens */
     }
-    
+
+    nav ul li a {
+        padding: 0.3rem 0.6rem; /* Reduce padding for smaller screens */
+    }
+
     main {
-        padding-top: 150px; /* Adjust padding for mobile view */
+        padding-top: 100px; /* Adjust padding for mobile view */
     }
 }
 
