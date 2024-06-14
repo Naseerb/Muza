@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('main section');
     const collapsibles = document.querySelectorAll('.collapsible h3');
+   
 
     function hideAllSections() {
         sections.forEach(section => {
